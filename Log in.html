@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .signup-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 350px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .login-link {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 8px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .google-btn {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .facebook-btn {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+    }
+
+    .divider {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .5em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .5em;
+    }
+
+    .email-btn {
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+
+    .checkbox {
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .checkbox input {
+      margin-right: 5px;
+    }
+
+    .checkbox a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .checkbox a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <p class="login-link">Already a member? <a href="#">Log In</a></p>
+
+   <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.cityviewhospital.com%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F937da965-9c31-459c-a218-9de5093928fd%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22937da965-9c31-459c-a218-9de5093928fd%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%2252a97c27-c2a6-4ddb-bd7e-8fd12781f400%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22MHD%2BkHRUt0cqbznN8%2BsU9Lry%2BtQwiaHniMOd%2FsWlYN4%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&flowName=GeneralOAuthFlow"><button class="btn google-btn">
+  <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="">
+      Sign up with Google
+    </button></a>
+
+   <a href="https://www.cityviewhospital.com/_api/iam/authentication/v1/sso/login/937da965-9c31-459c-a218-9de5093928fd/3ecad13f-52c3-483d-911f-31dbcf2a6d23?visitorId=1c296829-e9d9-45a8-94cf-f20e8d2d1275&bsi=3beb2979-9340-416a-bddb-6f3d31b15263&svSession=1095547e133e4511bd0cc20e26620b6fe8c631e5579715c52dad85bbaec5fce436e3b3fda2e21ff98df1dbdc02f0ab7a1e60994d53964e647acf431e4f798bcd8015bfa09b34026ff30fc108fe35012b24022c60b3631ccc1cffeb63b7abc1390f647b1e65b408dbb8519c427b7ace4202113c6121489e7b4d59ab51a83cd08663ffcf290f90dd674d103b3f0358e6e7&privacyStatus=PUBLIC&tenantType=SITE&sessionId=12a7a956-7545-47f0-be1f-ba04be740523&encryptionKey=C2AzXH3cUSjNbv4vgeoZL1IEL%2B2Z2SjzZQDHCbpzWC4%3D" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      Sign up with Facebook
+    </button></a>
+
+    <div class="divider">or</div>
+
+   <a href="#"><button class="btn email-btn">Sign up with email</button></a>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" checked />
+      Sign up to this site with a public profile.
+        <a href="#">Read more</a>
+      </label>
+    </div>
+  </div>
+</body>
+</html>
